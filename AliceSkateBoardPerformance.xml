@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<Mpeg7>-->
+
+<Mpeg7 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:mpeg7:schema:2004 ./mpeg7-v2.xsd" > <!-- avec ca : xmlns="urn:mpeg:mpeg7:schema:2004", ca valide mais le xslt marche plus>-->
+	<Description xsi:type='ContentEntityType'>
+    <MultimediaContent xsi:type='MultimediaCollectionType'>
+      <Collection xsi:type='ContentCollectionType'>
+        <Content xsi:type='VideoType'>
+          <Video>
+            <MediaInformation>
+              <MediaProfile>
+                <MediaFormat>
+                  <Content href='urn:mpeg:mpeg7:cs:ContentCS:2001:2'>
+                    <Name>Audiovisual</Name>
+                  </Content>
+                  <Medium href="urn:mpeg:mpeg7:cs:MediumCS:2001:2.1.1 ">
+                  		<Name xml:lang="en">HD</Name>
+				   </Medium>
+                  <FileFormat href='urn:mpeg:MPEG7FileFormatCS:4'>
+                    <Name>mp4</Name>
+                  </FileFormat>
+
+                  <FileSize>209715200</FileSize>
+
+                  <BitRate>1332000</BitRate>
+
+                  <VisualCoding>
+               			<Format href="urn:mpeg:cs:VisualCodingFormatCS:2001">
+							<Name>MPEG-4 Visual</Name>
+						</Format>
+               			 <Frame aspectRatio="1.77" height="720" rate="50.000000" structure="interlaced" width="407" />
+             	  </VisualCoding>
+
+                  <AudioCoding>
+               	  	<Format href="urn:mpeg:mpeg7:cs:AudioCodingFormatCS:2001:4.3">
+                 		<Name>MPEG-2 Audio AAC</Name>
+               		</Format>
+               		<AudioChannels>2</AudioChannels>
+               		<Sample bitsPer="16" rate="48000.000000" />
+             		</AudioCoding>
+                </MediaFormat>
+                <MediaInstance>
+                  <InstanceIdentifier>friends1x01.mp4</InstanceIdentifier>
+                  <MediaLocator xsi:type='MediaLocatorType'>
+                    <MediaUri>http://lt2c.telecom-st-etienne.fr/public/cgravier/dev/alice.mp4</MediaUri>
+                  </MediaLocator>
+                </MediaInstance>
+              </MediaProfile>
+
+            </MediaInformation>
+
+            <CreationInformation>
+
+              <Creation>
+                <Title>Alice performs skateboard.</Title>
+              <Abstract>
+                <FreeTextAnnotation>Alice is impressive on a skate board. Can you do better ?</FreeTextAnnotation>
+               <KeywordAnnotation>
+                <Keyword>skateboard</Keyword>
+                <Keyword>skate</Keyword>
+                <Keyword>Alice</Keyword>
+              </KeywordAnnotation>
+
+            <StructuredAnnotation>
+             	 <Who><Name>Alice</Name></Who>
+             	 <WhatObject><Name>Skateboard</Name></WhatObject>
+             	 <WhatAction><Name>Performing</Name></WhatAction>
+             	 <Where><Name>Miami</Name></Where>
+             	 <Why><Name>It is meant to demonstrate what I can do on a skateboard !</Name></Why>
+             	 <How><Name></Name></How>
+            </StructuredAnnotation>
+
+                </Abstract>
+                <Creator>
+					<Role href="urn:mpeg:mpeg7:cs:RoleCS:AUTHOR" />
+					<Agent xsi:type="PersonType">
+					<Name>
+						<GivenName>Charlie</GivenName>
+						<FamilyName>Anon</FamilyName>
+					</Name>
+					</Agent>
+				</Creator>
+
+				<Creator>
+					<Role href="urn:mpeg:mpeg7:cs:RoleCS:AUTHOR" />
+						<Agent xsi:type="PersonType">
+						<Name>
+							<GivenName>David</GivenName>
+						<FamilyName>Anon</FamilyName>
+						</Name>
+						</Agent>
+				</Creator>
+
+				<Creator>
+             		<Role href="urn:mpeg:mpeg7:cs:RoleCS:AUTHOR" />
+             		<Agent xsi:type="OrganizationType">
+               			<Name>
+                 			Alice and Bob Pictures
+               			</Name>
+             		</Agent>
+             	</Creator>
+
+				<Creator>
+             		<Role href="urn:mpeg:mpeg7:cs:RoleCS:2001:PUBLISHER" />
+             		<Agent xsi:type="OrganizationType">
+               			<Name>
+                 			Alice and Bob Pictures Publishers
+               			</Name>
+             		</Agent>
+             	</Creator>
+
+
+				<Creator>
+             		<Role href="urn:mpeg:mpeg7:cs:RoleCS:2001:PRODUCER" />
+             		<Agent xsi:type="OrganizationType">
+               			<Name>
+                 			Alice and Bob Pictures
+               			</Name>
+             		</Agent>
+       			</Creator>
+
+				<Creator>
+             		<Role href="urn:mpeg:mpeg7:cs:RoleCS:2001:ACTOR"></Role>
+             		<Agent xsi:type="PersonType">
+               			<Name>
+                 			<GivenName>Alice</GivenName>
+                 			<FamilyName>Anon</FamilyName>
+               			</Name>
+             		</Agent>
+             		<Character>
+               			<GivenName>Alice</GivenName>
+               			<FamilyName>Anon</FamilyName>
+             		</Character>
+       			</Creator>
+
+             <CreationCoordinates>
+             	<Location>
+              	 <Name>Miami, FL, USA</Name>
+             	</Location>
+             	<Date>
+              	 	<TimePoint>1994-02-12</TimePoint>
+             	</Date>
+           	</CreationCoordinates>
+          </Creation>
+
+              <Classification>
+
+              		<Genre href="urn:mpeg:mpeg7:cs:GenreCS:2001:2.1.2">
+             			<Name>Sport</Name>
+           			</Genre>
+
+					<Language type="original">en-US</Language>
+
+					<Release date="1994-09-22"/>
+
+              		<Target>
+              			<Age min="15" max="35" />
+              		</Target>
+
+
+
+           			<ParentalGuidance>
+             			<ParentalRating href="http://www.csa.fr/infos/controle/television_signaletique_C.php"><Name>Cat. II</Name> </ParentalRating>
+             			<Region>fr</Region>
+           			</ParentalGuidance>
+
+
+
+					<!-- First review 3/10 -->
+					<MediaReview>
+						<Rating>
+							<RatingValue>3.0</RatingValue>
+							<RatingScheme best="10" worst="0" style="higherBetter"/>
+						</Rating>
+						<Reviewer xsi:type="PersonType">
+							<Name>
+								<FamilyName>Reviewer</FamilyName>
+								<GivenName>Number One</GivenName>
+							</Name>
+						</Reviewer>
+					</MediaReview>
+
+              		<!-- Second review 4/5 -->
+					<MediaReview>
+						<Rating>
+							<RatingValue>4.0</RatingValue>
+							<RatingScheme best="5" worst="1" style="higherBetter"/>
+						</Rating>
+						<Reviewer xsi:type="PersonType">
+							<Name>
+								<FamilyName>Reviewer</FamilyName>
+								<GivenName>Number Two</GivenName>
+							</Name>
+						</Reviewer>
+					</MediaReview>
+					
+					<!-- Third review 1/8 -->
+					<MediaReview>
+						<Rating>
+							<RatingValue>2.0</RatingValue>
+							<RatingScheme best="8" worst="1" style="higherBetter"/>
+						</Rating>
+						<Reviewer xsi:type="PersonType">
+							<Name>
+								<FamilyName>Reviewer</FamilyName>
+								<GivenName>Number Three</GivenName>
+							</Name>
+						</Reviewer>
+					</MediaReview>
+
+              </Classification>
+
+
+
+            </CreationInformation>
+
+            <UsageInformation>
+				<Availability id="onDemand">
+						<InstanceRef href="http://youtube.com/friendspilotteaser1x01.mp4"/>
+
+						<Dissemination>
+							<Format href="MPEG7PublicationTypeCS:4">
+								<Name>Internet</Name>
+							</Format>
+							<Location>
+								<Region>us</Region>
+							</Location>
+						</Dissemination>
+
+						<AvailabilityPeriod type="online">
+							<TimePoint>1999-10-03</TimePoint>
+							<Duration>P5500D</Duration>
+						</AvailabilityPeriod>
+					</Availability>
+				<UsageRecord>
+					<AvailabilityRef idref="onDemand"/>
+					<Audience>33075</Audience>
+				</UsageRecord>
+			</UsageInformation>
+
+
+                   <MediaTime>
+         				<MediaTimePoint>T00:00:00</MediaTimePoint>
+         				<MediaDuration>PT2M</MediaDuration>
+       				</MediaTime>
+
+          </Video>
+        </Content>
+      </Collection>
+    </MultimediaContent>
+  </Description>
+  </Mpeg7>
